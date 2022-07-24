@@ -9,7 +9,9 @@ Suggested IDE: IntelliJ (community version), Eclipse, VS Code
 Upon opening project in IDE, few things are needed for project to set:
 
 -JDK
+
 -Gherkin
+
 -Cucumber
 
 If no JDK is configured, IDE will offer to set it up so java project can be ran.
