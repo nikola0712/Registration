@@ -7,6 +7,7 @@ Tests will run against registration form on provided url in project.
 Suggested IDE: IntelliJ (community version), Eclipse, VS Code
 
 Upon opening project in IDE, few things are needed for project to set:
+
 -JDK
 -Gherkin
 -Cucumber
