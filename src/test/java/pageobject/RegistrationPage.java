@@ -90,12 +90,14 @@ public class RegistrationPage extends BaseClass {
         driver.findElement(By.id(Selectors.companyTelephone)).sendKeys(randomTelephone());
         driver.findElement(By.id(Selectors.companyContactPerson)).sendKeys(randomName());
         driver.findElement(By.id(Selectors.companyAddress)).sendKeys(randomCompanyAddress());
+        //needed sleep as selenium is too fast for autocomplete and explicit wait won't help here, nor other loading mechanism
         this.sleep(3);
 
         WebElement postalNumber = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(Selectors.addressAutoComplete)));
         postalNumber.click();
         postalNumber.clear();
         postalNumber.sendKeys("11");
+        //same here
         this.sleep(5);
         postalNumber.sendKeys(Keys.ARROW_DOWN);
         postalNumber.sendKeys(Keys.ENTER);
